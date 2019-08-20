@@ -61,4 +61,4 @@ typings/
 .next
 
 # typescript distribution directory
-dist
+dist/
