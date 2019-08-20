@@ -12,10 +12,10 @@
     "eslint": "^6.2.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "tsc-watch": "^2.4.0",
     "typescript": "^3.5.3"
   },
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc index.ts"
+    "start": "tsc-watch --onSuccess \" node ./dist/index.js \" "
   }
 }
