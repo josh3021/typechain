@@ -1,13 +1,14 @@
-class Human {
-    constructor(name, age, gender) {
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
+class Block {
+    constructor(index, hash, prevHash, data, timestamp) {
+        this.index = index;
+        this.hash = hash;
+        this.prevHash = prevHash;
+        this.data = data;
+        this.timestamp = timestamp;
     }
 }
-const seonghwan = new Human("seonghwan", 19, "male");
-const sayHello = (person) => {
-    return `Hello! ${person.name}, you are ${person.age} years old, and you are ${person.gender}`;
-};
-console.log(sayHello(seonghwan));
+const genesisBlock = new Block(0, "kindOfHash", "", "SuperDummyData", 1111111);
+const dummyBlock = new Block(1, "differnetHash", "kindOfHash", "SumperDuperDummyData", 2222222);
+const blockchain = [genesisBlock, dummyBlock];
+console.log(blockchain);
 //# sourceMappingURL=index.js.map
